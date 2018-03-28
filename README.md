@@ -5,12 +5,12 @@ It uses `SysV semaphores` to implement the buffer which is stored in a shared me
 
 Each client and server procress is created using `fork()`.
 Each printClient makes 6 print requests.
-- Filename is the clients PID with the loop iteration appended to it,
-    - e.g. Printclient 12345's 3rd print request file would be 123453.
-- The prinServer sleeps for a random number of seconds between 1-4 to simulate printing files of various sizes.
+- Filename is the client's PID with the loop iteration appended to it,
+    - e.g. `Printclient:12345`'s 3rd print request file would be `123453`.
+- When serving a request, the printServer sleeps for a random number of seconds between 1-4 to simulate printing files of various sizes.
 
 
- You will be prompted to input the number of servers and clients. forking client/server processes off the parent in the main function.
+ You will be prompted to input the number of servers and clients which will then fork the inputted number of client/server processes off the parent in the main function.
  Provide the flag -n when running the program to be prompted for num of servers and clients.(Actually, providing any command line argument will cause the program to prompt you for the numServers/Clients)
 
 
