@@ -4,13 +4,13 @@ RM      = rm -f
 
 default:all
 
-all:a3q2 shutdownServer
+all:printQueue shutdownServer
 
-a3q2:
-	$(CC) $(CFLAGS) -o a3q2 a3q2.c
+printQueue:
+	$(CC) $(CFLAGS) -o printQueue printQueue.c
 
 shutdown:
 	$(CC) $(CFLAGS) -o shutdownServer shutdownServer.c
 
 clean:
-	$(RM) a3q2 shutdown
+	$(RM) printQueue shutdownServer
