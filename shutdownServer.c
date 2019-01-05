@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
         	exit(1);
      	}
      	int pid = atoi(argv[1]);
-	printf("Ypu provided %d as arg\n", pid);
+	printf("You provided %d as pID\n", pid);
         printf("Sending kill signal to process:%d\n", pid);
 
 

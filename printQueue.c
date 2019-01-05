@@ -88,6 +88,8 @@ int main(int argc, char* argv[]) {
 	for (int i = 0; i < numServers + numClients; i++)
 		wait(NULL);
 
+	printf("All print servers shutdown, terminating...\n");
+
 	return 0;
 }
 
@@ -125,7 +127,7 @@ void printClient(int id) {
         printf("printClient:%d added file:%d to buffer\n", id, fileName);
 	}
     sleep(3);
-	printf("printClient %d OFFLINE\n", id);
+	printf("printClient:%d OFFLINE\n", id);
 	exit(0);
 }
 

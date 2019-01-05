@@ -1,4 +1,6 @@
-## PrintServer
+## Print-server
+
+![PrintQueue screenshot](img/screenshot.png)
 
 This is essentially an implementation of the producer/consumer problem modelled as printServers/printClients.
 It uses `SysV semaphores` to implement the buffer which is stored in a shared memory segment.
